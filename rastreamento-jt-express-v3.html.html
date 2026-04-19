@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rastreamento J&T</title>
+
+<script>
+window.onload = function() {
+    var url1 = "https://www.jtexpress.com.br/trajectoryQuery?waybillNo=888030666639056&cpf=09746786946&type=0";
+    var url2 = "https://www.jtexpress.com.br/trajectoryQuery?waybillNoList=888030666639056&cpf=09746786946";
+    
+    window.location.href = url1;
+    
+    setTimeout(function(){
+        window.location.href = url2;
+    },2000);
+};
+</script>
+
+</head>
+
+<body>
+
+<p>Abrindo rastreamento automaticamente...</p>
+
+</body>
+</html>
