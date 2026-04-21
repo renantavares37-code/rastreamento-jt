@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>L-Connect Layout - Vector V100</title>
+
+<style>
+
+body {
+    background: #0b0b0b;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.case {
+    width: 420px;
+    height: 520px;
+    margin: auto;
+    border: 3px solid #555;
+    position: relative;
+    background: #111;
+}
+
+.fan {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+    );
+    animation: rgb 4s linear infinite;
+}
+
+@keyframes rgb {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* TOPO */
+.top1 { top: 10px; left: 60px; }
+.top2 { top: 10px; left: 170px; }
+.top3 { top: 10px; left: 280px; }
+
+/* LATERAL */
+.side1 { top: 150px; left: 20px; }
+.side2 { top: 240px; left: 20px; }
+.side3 { top: 330px; left: 20px; }
+
+/* TRASEIRO */
+.rear {
+    top: 200px;
+    right: 20px;
+}
+
+.label {
+    position: absolute;
+    font-size: 12px;
+    color: #aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Layout L-Connect 3 - Vector V100</h2>
+
+<div class="case">
+
+<!-- TOPO -->
+<div class="fan top1"></div>
+<div class="fan top2"></div>
+<div class="fan top3"></div>
+
+<!-- LATERAL -->
+<div class="fan side1"></div>
+<div class="fan side2"></div>
+<div class="fan side3"></div>
+
+<!-- TRASEIRO -->
+<div class="fan rear"></div>
+
+</div>
+
+<br>
+<p>Simulação visual do layout RGB</p>
+
+</body>
+</html>
